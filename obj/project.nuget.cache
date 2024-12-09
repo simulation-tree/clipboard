@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vP0B+Qv7EyI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\phill\\Desktop\\abacus\\clipboard\\Clipboard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\phill\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.0-rc.2.24473.5\\microsoft.net.illink.tasks.9.0.0-rc.2.24473.5.nupkg.sha512"
+  ],
+  "logs": []
+}
