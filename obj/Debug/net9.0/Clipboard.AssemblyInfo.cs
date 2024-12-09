@@ -11,11 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadata("IsTrimmable", "True")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Clipboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+131b4321769c7828b3d082b3a11eba596a967ea0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Clipboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Clipboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
