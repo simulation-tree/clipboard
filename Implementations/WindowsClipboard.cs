@@ -5,32 +5,6 @@ using System.Text;
 
 namespace Clipboard.Implementations
 {
-    public unsafe readonly partial struct MacClipboard : IClipboardImplementation
-    {
-        static string? IClipboardImplementation.GetText()
-        {
-            throw new NotImplementedException();
-        }
-
-        static void IClipboardImplementation.SetText(string text)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public unsafe readonly partial struct LinuxClipboard : IClipboardImplementation
-    {
-        static string? IClipboardImplementation.GetText()
-        {
-            throw new NotImplementedException();
-        }
-
-        static void IClipboardImplementation.SetText(string text)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
     public unsafe readonly partial struct WindowsClipboard : IClipboardImplementation
     {
         private const uint UnicodeTextFormat = 13;
