@@ -24,10 +24,10 @@ jobs:
         run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
 
       - name: Build Source
-        run: dotnet build "${{ github.event.repository.name }}" -c Release /p:Version=${VERSION}
+        run: dotnet build "${{ github.event.repository.name }}/source" -c Release /p:Version=${VERSION}
       
       - name: Pack Source
-        run: dotnet pack "${{ github.event.repository.name }}" -c Release /p:Version=${VERSION} --no-build --output .
+        run: dotnet pack "${{ github.event.repository.name }}/source" -c Release /p:Version=${VERSION} --no-build --output .
 
       - name: Add source
         run: dotnet nuget add source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json --name github --username ${{ github.repository_owner }} --password ${{ github.token }} --store-password-in-clear-text
