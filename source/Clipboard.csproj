@@ -10,8 +10,8 @@
         <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
         <Title>Clipboard</Title>
         <Authors>popcron</Authors>
-        <Company>game-simulations</Company>
-        <RepositoryUrl>https://github.com/game-simulations/clipboard</RepositoryUrl>
+        <Company>simulation-tree</Company>
+        <RepositoryUrl>https://github.com/simulation-tree/clipboard</RepositoryUrl>
         <PackageId/>
     </PropertyGroup>
 
