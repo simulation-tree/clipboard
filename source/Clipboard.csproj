@@ -1,18 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
-        <ImplicitUsings>disable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-        <IsAotCompatible>True</IsAotCompatible>
-        <IsTrimmable>True</IsTrimmable>
-        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-        <Title>Clipboard</Title>
-        <Authors>popcron</Authors>
-        <Company>simulation-tree</Company>
-        <RepositoryUrl>https://github.com/simulation-tree/clipboard</RepositoryUrl>
-        <PackageId/>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <IsAotCompatible>True</IsAotCompatible>
+    <IsTrimmable>True</IsTrimmable>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <Title>Clipboard</Title>
+    <Authors>popcron</Authors>
+    <Company>simulation-tree</Company>
+    <RepositoryUrl>https://github.com/simulation-tree/clipboard</RepositoryUrl>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin/Debug/net9.0/Clipboard.dll" Pack="true" PackagePath="tools/debug/Clipboard.dll" Visible="false"/>
+    <Content Include="bin/Debug/net9.0/Clipboard.xml" Pack="true" PackagePath="tools/debug/Clipboard.xml" Visible="false"/>
+    <Content Include="bin/Release/net9.0/Clipboard.dll" Pack="true" PackagePath="tools/release/Clipboard.dll" Visible="false"/>
+    <Content Include="bin/Release/net9.0/Clipboard.xml" Pack="true" PackagePath="tools/release/Clipboard.xml" Visible="false"/>
+    <Content Include="build/Clipboard.targets" Pack="true" PackagePath="build/Clipboard.targets" Visible="false"/>
+  </ItemGroup>
 
 </Project>
