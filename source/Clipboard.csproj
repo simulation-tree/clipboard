@@ -13,15 +13,12 @@
     <Company>simulation-tree</Company>
     <RepositoryUrl>https://github.com/simulation-tree/clipboard</RepositoryUrl>
     <IncludeBuildOutput>false</IncludeBuildOutput>
-    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <OutDir>bin/$(TargetFramework)/$(Configuration)</OutDir>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bin/Debug/net9.0/Clipboard.dll" Pack="true" PackagePath="tools/debug/Clipboard.dll" Visible="false"/>
-    <Content Include="bin/Debug/net9.0/Clipboard.xml" Pack="true" PackagePath="tools/debug/Clipboard.xml" Visible="false" Condition="Exists('bin/Debug/net9.0/Clipboard.xml')"/>
-    <Content Include="bin/Release/net9.0/Clipboard.dll" Pack="true" PackagePath="tools/release/Clipboard.dll" Visible="false"/>
-    <Content Include="bin/Release/net9.0/Clipboard.xml" Pack="true" PackagePath="tools/release/Clipboard.xml" Visible="false" Condition="Exists('bin/Release/net9.0/Clipboard.xml')"/>
-    <Content Include="build/Clipboard.targets" Pack="true" PackagePath="build/Clipboard.targets" Visible="false"/>
+    <Content Include="bin/**/*" Pack="true" PackagePath="lib" Visible="false"/>
+    <Content Include="buildTransitive/**/*" Pack="true" PackagePath="buildTransitive"/>
   </ItemGroup>
 
 </Project>
